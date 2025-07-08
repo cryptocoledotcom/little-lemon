@@ -1,0 +1,26 @@
+.booking-form {
+  display: grid;
+  max-width: 350px;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.booking-form label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--primary-color-1);
+  text-align: left;
+}
+
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: 'Karla', sans-serif;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+

@@ -1,0 +1,303 @@
+section {
+  padding: 4rem 15%;
+}
+
+.cta-button {
+  background-color: var(--primary-color-2);
+  color: var(--highlight-color-dark);
+  padding: 0.8rem 1.5rem;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e0be12;
+}
+
+/* Hero / CallToAction Section */
+.hero {
+  background-color: var(--primary-color-1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-content h1 {
+  color: var(--primary-color-2);
+  font-family: 'Markazi Text', serif;
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.hero-content h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  font-weight: normal;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 300px;
+}
+
+.hero-image img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Specials Section */
+.specials {
+  background-color: white;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.specials-header h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.specials-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.special-card {
+  background-color: var(--highlight-color-light);
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.special-card-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.special-card-header h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.price {
+  color: var(--secondary-color-1);
+  font-weight: bold;
+}
+
+.special-card-content p {
+  color: var(--highlight-color-dark);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.order-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--highlight-color-dark);
+}
+
+/* Testimonials / CustomersSay Section */
+.testimonials {
+  background-color: var(--primary-color-1);
+  text-align: center;
+  color: white;
+}
+
+.testimonials h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.testimonials-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: var(--highlight-color-light);
+  color: var(--highlight-color-dark);
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+.rating {
+  color: var(--primary-color-2);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.customer-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-text {
+  font-style: italic;
+}
+
+/* About / Chicago Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+  background-color: white;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1;
+  color: var(--primary-color-2);
+}
+
+.about-content h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  font-weight: normal;
+  color: var(--highlight-color-dark);
+}
+
+.about-content p {
+  color: var(--highlight-color-dark);
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.about-images {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  flex-shrink: 0;
+}
+
+.about-image-1, .about-image-2 {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  position: absolute;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-image-1 {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.about-image-2 {
+  bottom: 0;
+  right: 0;
+}
+
+/* --- Responsive Design --- */
+
+@media (max-width: 992px) {
+  section {
+    padding: 4rem 8%;
+  }
+
+  .hero, .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content p, .about-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-images {
+    margin-top: 3rem;
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .about-image-1, .about-image-2 {
+    position: static;
+    width: 45%;
+    max-width: 250px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .specials-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+}
